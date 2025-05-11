@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px double purple;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.calculator {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 5px solid yellow;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(1, 251, 240);
+}
+
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.operator {
+    background-color: orange;
+    color: white;
+}
+
+.operator:active {
+    background-color: #e53935;
+}
+
+.clear {
+    grid-column: span 4;
+    background-color: #e53935;
+    color: white;
+    width: 100%;
+}
+
+.clear:active {
+    background-color: #d32f2f;
+}
+
+.delete {
+    color: black;
+    background-color: aqua;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    grid-column: span 4;
+    width: 100%;
+}
+
+.judul {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: red;
+    color: orange;
+}
